@@ -1,1 +1,1 @@
-a grid of circles
+Creating a grid of circles.
