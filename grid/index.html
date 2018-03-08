@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Document</title>
+  <script type="text/paperscript" canvas="myCanvas">
+    var rows = 50;
+    var cols = 50;
+    var x = 0;
+    var y = 0;
+    var xStart = 80;
+    var yStart = 80;
+
+    for (var i = 0; i < rows; i++) {
+      x = 0;
+      for (var j = 0; j < cols; j++) {
+        new Path.Circle(new Point(x, y), 20).fillColor = 'orange';
+        x += xStart;
+        console.log("ya");
+      }
+      y += yStart;
+    }
+
+  </script>
+</head>
+
+<body>
+  <canvas id="myCanvas" resize></canvas>
+  <!-- SCRIPT -->
+  <script src="assets/js/lib/paper-full.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
